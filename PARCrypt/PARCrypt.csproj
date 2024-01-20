@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ApplicationIcon>Resources\PARCrypt_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Keys\016E58E4.key" />
+    <None Remove="Keys\5F883923.key" />
+    <None Remove="Keys\924AD796.key" />
+    <None Remove="Keys\ACC58B99.key" />
+    <None Remove="Resources\PARCrypt_icon.ico" />
+    <None Remove="Resources\title.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\PARCrypt_icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Keys\016E58E4.key" />
+    <EmbeddedResource Include="Keys\5F883923.key" />
+    <EmbeddedResource Include="Keys\924AD796.key" />
+    <EmbeddedResource Include="Keys\ACC58B99.key" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.9.1" />
+    <PackageReference Include="Sharprompt" Version="2.4.5" />
+    <PackageReference Include="ShellProgressBar" Version="5.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\PARCrypt_icon.ico" />
+    <EmbeddedResource Include="Resources\title.txt" />
+  </ItemGroup>
+
+</Project>
